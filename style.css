@@ -281,8 +281,9 @@ main > section:nth-child(3) {
   justify-content: center;
   align-items: center;
   gap: 50px;
-
-  padding: 120px 150px 0 150px;
+  clip-path: polygon(0 28%, 100% 0%, 100% 72%, 0% 100%);
+  padding: 280px 150px;
+  background: linear-gradient(to top left, #f1f7ff 40%, #efe5fd);
 }
 /*** div 1st ***/
 main > section:nth-child(3) > div:nth-child(1) {
@@ -308,7 +309,7 @@ main > section:nth-child(3) > div:nth-child(1) > div > p {
 /* line div 2nd */
 main > section:nth-child(3) > div:nth-child(2) {
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: rgb(229, 174, 253);
 }
 /* line div 3rd */
@@ -328,10 +329,10 @@ main > section:nth-child(4) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  gap: 50px;
+  align-items: flex-start;
+  gap: 150px;
 
-  padding: 120px 150px 0 150px;
+  padding: 120px 170px 0 170px;
 }
 main > section:nth-child(4) > div:nth-child(1) {
   width: 50vw;
@@ -397,18 +398,162 @@ main > section:nth-child(4) > div:nth-child(1) > div:nth-child(3) {
   justify-items: center;
   align-items: center;
   grid-template-columns: repeat(2, 0.5fr);
-  grid-template-rows: repeat(2, 0.5fr);
-
-  background-color: rgb(252, 202, 202);
+  grid-template-rows: repeat(2, 0.4fr);
 }
 /* right div */
 main > section:nth-child(4) > div:nth-child(2) {
-  width: 50vw;
+  width: 40vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 223, 251);
+  padding: 20px;
+}
+main > section:nth-child(4) > div:nth-child(2) > div {
+  width: 30vw;
   height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #fff;
+}
 
-  background-color: antiquewhite;
+main > section:nth-child(4) > div:nth-child(2) > div:hover {
+  /* transform: scaleX(20px); */
+  /* transition: all ease-in-out 0.2s; */
+  /* cursor: pointer;
+  position: relative;
+  top: -50px; */
+}
+main > section:nth-child(4) > div:nth-child(2) > div > h3 {
+  margin-bottom: 15px;
+}
+main
+  > section:nth-child(4)
+  > div:nth-child(2)
+  > div
+  > div:nth-child(2)
+  > button,
+input {
+  width: 20vw;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(243, 223, 251);
+  font-size: 12px;
+}
+main
+  > section:nth-child(4)
+  > div:nth-child(2)
+  > div
+  > div:nth-child(2)
+  > button {
+  background-color: #722ed1;
+  color: #fff;
+}
+
+main
+  > section:nth-child(4)
+  > div:nth-child(2)
+  > div
+  > div:nth-child(4)
+  > img[alt="google-button"] {
+  margin: 15px 0;
+}
+
+main > section:nth-child(4) > div:nth-child(2) > div > div:nth-child(4) > div {
+  width: 20vw;
+  height: 1.5px;
+  margin-bottom: 14px;
+
+  background-color: rgb(243, 223, 251);
+}
+
+main > section:nth-child(4) > div:nth-child(2) > div > div:nth-child(4) > p {
+  color: rgb(135, 135, 135);
+}
+main
+  > section:nth-child(4)
+  > div:nth-child(2)
+  > div
+  > div:nth-child(4)
+  > p
+  > span {
+  color: #722ed1;
+}
+/* ********** Footer Section ******** */
+footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: flex-start;
+  list-style: none;
+  width: 100vw;
+  padding: 100px 150px 80px 150px;
+}
+footer > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+footer > div:nth-child(1) > p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #6f6f6f;
+}
+footer > div:nth-child(1) > div > img {
+  margin-right: 10px;
+}
+footer > div:nth-child(1) > div > img:hover {
+  cursor: pointer;
+}
+footer > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  list-style: none;
+  font-size: 14px;
+  color: #6f6f6f;
+}
+
+footer > ul > li:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+footer > ul > li > strong {
+  color: #000;
+}
+
+footer > div:nth-child(6) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+footer > div:nth-child(6) > label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgb(243, 223, 251);
+  width: 250px;
+  padding: 9px 20px;
+  box-shadow: 0 5px 5px 0 rgb(231, 231, 231);
+}
+footer > div:nth-child(6) > label > input {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin-top: 10px;
 }
