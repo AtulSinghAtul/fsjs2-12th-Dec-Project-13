@@ -29,12 +29,22 @@ nav > ul {
   list-style: none;
   gap: 40px;
 }
+nav > ul > li:hover {
+  cursor: pointer;
+  color: #722ed1;
+}
 nav > ul > li button {
   background-color: #fff;
   padding: 10px 20px;
-  border: 2px solid #920292;
+  border: 1px solid #920292;
   border-radius: 30px;
   color: #722ed1;
+}
+nav > ul > li button:hover {
+  cursor: pointer;
+  background-color: #b1f0fb;
+  border: 1px solid #fff;
+  transition: all ease-in-out 0.4s;
 }
 /******** header section ***********/
 header {
@@ -101,9 +111,21 @@ header section:nth-child(2) > div > div > button:nth-child(1) {
   background-color: #722ed1;
   color: #fff;
 }
+header section:nth-child(2) > div > div > button:nth-child(1):hover {
+  background-color: #fff;
+  color: #722ed1;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
 header section:nth-child(2) > div > div > button:nth-child(2) {
   background-color: #fff;
   color: #722ed1;
+}
+header section:nth-child(2) > div > div > button:nth-child(2):hover {
+  background-color: #722ed1;
+  color: #fff;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
 }
 /******  Why Qubley Section  ******/
 
@@ -446,6 +468,7 @@ input {
   border: 1px solid rgb(243, 223, 251);
   font-size: 12px;
 }
+
 main
   > section:nth-child(4)
   > div:nth-child(2)
@@ -455,6 +478,16 @@ main
   background-color: #722ed1;
   color: #fff;
 }
+main
+  > section:nth-child(4)
+  > div:nth-child(2)
+  > div
+  > div:nth-child(2)
+  > button:hover {
+  background-color: #5c1ab8;
+  color: #fff;
+  cursor: pointer;
+}
 
 main
   > section:nth-child(4)
@@ -463,6 +496,7 @@ main
   > div:nth-child(4)
   > img[alt="google-button"] {
   margin: 15px 0;
+  cursor: pointer;
 }
 
 main > section:nth-child(4) > div:nth-child(2) > div > div:nth-child(4) > div {
@@ -525,7 +559,7 @@ footer > ul {
 }
 
 footer > ul > li:hover {
-  color: #000;
+  color: #722ed1;
   cursor: pointer;
 }
 
