@@ -609,6 +609,11 @@ footer > div:nth-child(6) > label > input {
 
 /************** Media Query ****************/
 /* ************************************* */
+@media screen and (max-width: 425px) and (min-width: 300px) {
+  footer > div:nth-child(6) > label {
+    display: none;
+  }
+}
 @media screen and (max-width: 1024px) and (min-width: 300px) {
   /****** nav section *******/
   header {
