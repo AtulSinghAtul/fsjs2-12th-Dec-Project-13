@@ -3,23 +3,33 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  /* font size by default => 1rem = 16px = 100% 
+     - 100% / 16px = 6.25%
+     - 1px = 6.25%
+     - 10px value in percentage => 6.25% * 10px = 62.5%
+     - finally we got (10px = 62.5% = 1rem)
+  */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 /****** nav section *******/
 header {
   width: 100vw;
-  padding: 0 150px;
+  padding: 0 15rem;
 }
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 70px;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
 }
 nav > ul {
   display: flex;
@@ -27,7 +37,12 @@ nav > ul {
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 40px;
+  gap: 4rem;
+  font-size: 1.6rem;
+}
+i[class="fa-solid fa-bars"] {
+  display: none;
+  background-color: #fff;
 }
 nav > ul > li:hover {
   cursor: pointer;
@@ -35,15 +50,15 @@ nav > ul > li:hover {
 }
 nav > ul > li button {
   background-color: #fff;
-  padding: 10px 20px;
-  border: 1px solid #920292;
-  border-radius: 30px;
+  padding: 1rem 2rem;
+  border: 0.1rem solid #920292;
+  border-radius: 3rem;
   color: #722ed1;
 }
 nav > ul > li button:hover {
   cursor: pointer;
   background-color: #b1f0fb;
-  border: 1px solid #fff;
+  border: 0.1rem solid #fff;
   transition: all ease-in-out 0.4s;
 }
 /******** header section ***********/
@@ -56,14 +71,14 @@ header section:nth-child(2) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 150px;
+  padding-bottom: 15rem;
 }
 header section:nth-child(2) > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 2rem;
 }
 header section:nth-child(2) > div > button:nth-child(1) {
   background-color: rgb(249, 230, 252);
@@ -72,39 +87,39 @@ header section:nth-child(2) > div > button:nth-child(1) {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 9px 24px;
+  padding: 0.9rem 2.4rem;
   border: none;
-  font-size: 12px;
+  font-size: 1.2rem;
   position: relative;
 }
 header > section:nth-child(2) > img {
-  width: 550px;
+  width: 55rem;
 }
 header section:nth-child(2) > div > button div {
-  margin-right: 15px;
+  margin-right: 1.5rem;
 }
 header section:nth-child(2) > div > button div > img:nth-child(2) {
   position: absolute;
-  top: 7px;
-  width: 6px;
+  top: 0.7rem;
+  width: 0.6rem;
 }
 header section:nth-child(2) > div h2 {
-  font-size: 50px;
-  width: 450px;
+  font-size: 5rem;
+  width: 45rem;
 }
 header section:nth-child(2) > div p {
-  font-size: 14px;
-  width: 400px;
-  line-height: 30px;
+  font-size: 1.4rem;
+  width: 40rem;
+  line-height: 3rem;
   color: rgb(134, 133, 133);
 }
 header section:nth-child(2) > div > div button {
-  margin-right: 15px;
+  margin-right: 1.5rem;
 }
 header section:nth-child(2) > div > div > button {
   background-color: #fff;
-  padding: 9px 24px;
-  border-radius: 30px;
+  padding: 0.9rem 2.4rem;
+  border-radius: 3rem;
   border: none;
 }
 header section:nth-child(2) > div > div > button:nth-child(1) {
@@ -127,7 +142,7 @@ header section:nth-child(2) > div > div > button:nth-child(2):hover {
   cursor: pointer;
   transition: all ease-in-out 0.4s;
 }
-/******  Why Qubley Section  ******/
+/******  Why Qubley main Section  ******/
 
 main > section:nth-child(1) {
   width: 100vw;
@@ -137,8 +152,8 @@ main > section:nth-child(1) {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 35px;
-  padding: 80px 150px 0 150px;
+  gap: 3.5rem;
+  padding: 8rem 15rem 0 15rem;
 }
 main > section:nth-child(1) > div:nth-child(1) {
   width: 100%;
@@ -148,7 +163,7 @@ main > section:nth-child(1) > div:nth-child(1) {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 30px;
+  gap: 3rem;
 }
 main > section:nth-child(1) > div > button {
   background-color: rgb(249, 230, 252);
@@ -158,20 +173,20 @@ main > section:nth-child(1) > div > button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  padding: 9px 24px;
+  gap: 0.8rem;
+  padding: 0.9rem 2.4rem;
   border: none;
-  border-radius: 30px;
-  font-size: 14px;
+  border-radius: 3rem;
+  font-size: 1.4rem;
 }
 
 main > section:nth-child(1) > div > h3 {
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 main > section:nth-child(1) > div > p {
-  font-size: 14px;
-  width: 450px;
-  line-height: 25px;
+  font-size: 1.4rem;
+  width: 45rem;
+  line-height: 2.5rem;
   color: rgb(161, 160, 160);
 }
 /******* 3 box section ******/
@@ -189,16 +204,16 @@ main > section:nth-child(1) > div:nth-child(2) > div {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 25px;
+  gap: 2.5rem;
 }
 main > section:nth-child(1) > div:nth-child(2) > div > p {
-  width: 310px;
-  font-size: 14px;
-  line-height: 25px;
+  width: 31rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
   color: rgb(161, 160, 160);
 }
 
-/****** main section 2nd */
+/****** main section 2nd ***********/
 main > section:nth-child(2) {
   width: 100vw;
   height: fit-content;
@@ -206,9 +221,9 @@ main > section:nth-child(2) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 10rem;
 
-  padding: 120px 150px 0 150px;
+  padding: 12rem 15rem 0 15rem;
 }
 main > section:nth-child(2) > div {
   display: flex;
@@ -216,10 +231,10 @@ main > section:nth-child(2) > div {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 100px;
+  padding: 0 10rem;
 }
 img[src="./images/Group 21.svg"] {
-  width: 400px;
+  width: 40rem;
 }
 /* top div */
 main > section:nth-child(2) > div:nth-child(1) > div {
@@ -227,7 +242,7 @@ main > section:nth-child(2) > div:nth-child(1) > div {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 25px;
+  gap: 2.5rem;
 }
 main > section:nth-child(2) > div:nth-child(1) > div > button {
   background-color: rgb(249, 230, 252);
@@ -237,19 +252,19 @@ main > section:nth-child(2) > div:nth-child(1) > div > button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  padding: 9px 24px;
+  gap: 1.2rem;
+  padding: 0.9rem 2.4rem;
   border: none;
-  border-radius: 30px;
-  font-size: 14px;
+  border-radius: 3rem;
+  font-size: 1.4rem;
 }
 main > section:nth-child(2) > div:nth-child(1) > div > h3 {
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 main > section:nth-child(2) > div:nth-child(1) > div > p {
-  font-size: 14px;
-  width: 450px;
-  line-height: 25px;
+  font-size: 1.4rem;
+  width: 45rem;
+  line-height: 2.5rem;
   color: rgb(161, 160, 160);
 }
 /* bottom div reverse */
@@ -258,15 +273,15 @@ main > section:nth-child(2) > div:nth-child(2) {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
-  padding: 0 100px;
+  gap: 2.5rem;
+  padding: 0 10rem;
 }
 main > section:nth-child(2) > div:nth-child(2) > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 25px;
+  gap: 2.5rem;
 }
 main > section:nth-child(2) > div:nth-child(2) > div > button {
   background-color: rgb(249, 230, 252);
@@ -276,23 +291,23 @@ main > section:nth-child(2) > div:nth-child(2) > div > button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  padding: 9px 24px;
+  gap: 1.2rem;
+  padding: 0.9rem 2.4rem;
   border: none;
-  border-radius: 30px;
-  font-size: 14px;
+  border-radius: 3rem;
+  font-size: 1.4rem;
 }
 main > section:nth-child(2) > div:nth-child(2) > div > h3 {
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 main > section:nth-child(2) > div:nth-child(2) > div > p {
-  font-size: 14px;
-  width: 450px;
-  line-height: 25px;
+  font-size: 1.4rem;
+  width: 45rem;
+  line-height: 2.5rem;
   color: rgb(161, 160, 160);
 }
 img[src="./images/image 6.png"] {
-  width: 500px;
+  width: 50rem;
 }
 /*********8 main > section 3rd *********/
 main > section:nth-child(3) {
@@ -302,9 +317,9 @@ main > section:nth-child(3) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 5rem;
   clip-path: polygon(0 28%, 100% 0%, 100% 72%, 0% 100%);
-  padding: 280px 150px;
+  padding: 28rem 15rem;
   background: linear-gradient(to top left, #f1f7ff 40%, #efe5fd);
 }
 /*** div 1st ***/
@@ -314,18 +329,18 @@ main > section:nth-child(3) > div:nth-child(1) {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 35px;
-  padding: 0 100px;
+  gap: 3.5rem;
+  padding: 0 10rem;
   width: 100%;
 }
 main > section:nth-child(3) > div:nth-child(1) > p:nth-child(1) {
-  font-size: 20px;
+  font-size: 2rem;
   color: rgb(47, 47, 47);
-  line-height: 25px;
-  width: 1000px;
+  line-height: 2.5rem;
+  width: 100rem;
 }
 main > section:nth-child(3) > div:nth-child(1) > div > p {
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 }
 
 /* line div 2nd */
@@ -352,9 +367,9 @@ main > section:nth-child(4) {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 150px;
+  gap: 15rem;
 
-  padding: 120px 170px 0 170px;
+  padding: 12rem 17rem 0 17rem;
 }
 main > section:nth-child(4) > div:nth-child(1) {
   width: 50vw;
@@ -363,18 +378,18 @@ main > section:nth-child(4) > div:nth-child(1) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 5rem;
 }
 main
   > section:nth-child(4)
   > div:nth-child(1)
   > div:nth-child(1)
   > p:nth-child(1) {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   color: rgb(47, 47, 47);
-  line-height: 30px;
-  width: 400px;
+  line-height: 3rem;
+  width: 40rem;
   text-align: left;
 }
 /* line div 2nd */
@@ -383,7 +398,7 @@ main > section:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
   width: 100%;
 }
 
@@ -392,23 +407,23 @@ main
   > div:nth-child(1)
   > div:nth-child(2)
   > div:nth-child(1) {
-  gap: 20px;
+  gap: 2rem;
   width: 30%;
-  height: 2px;
+  height: 0.2rem;
   background-color: rgb(229, 174, 253);
 }
 main > section:nth-child(4) > div:nth-child(1) > div:nth-child(2) > span {
   color: rgb(229, 174, 253);
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 main
   > section:nth-child(4)
   > div:nth-child(1)
   > div:nth-child(2)
   > div:nth-child(3) {
-  gap: 20px;
+  gap: 2rem;
   width: 30%;
-  height: 2px;
+  height: 0.2rem;
   background-color: rgb(229, 174, 253);
 }
 
@@ -431,7 +446,7 @@ main > section:nth-child(4) > div:nth-child(2) {
   justify-content: center;
   align-items: center;
   background-color: rgb(243, 223, 251);
-  padding: 20px;
+  padding: 2rem;
 }
 main > section:nth-child(4) > div:nth-child(2) > div {
   width: 30vw;
@@ -441,7 +456,7 @@ main > section:nth-child(4) > div:nth-child(2) > div {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px 0;
+  padding: 3rem 0;
   background-color: #fff;
 }
 
@@ -453,7 +468,7 @@ main > section:nth-child(4) > div:nth-child(2) > div:hover {
   top: -50px; */
 }
 main > section:nth-child(4) > div:nth-child(2) > div > h3 {
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 main
   > section:nth-child(4)
@@ -463,10 +478,10 @@ main
   > button,
 input {
   width: 20vw;
-  padding: 15px 20px;
-  margin-bottom: 10px;
-  border: 1px solid rgb(243, 223, 251);
-  font-size: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+  border: 0.1rem solid rgb(243, 223, 251);
+  font-size: 1.2rem;
 }
 
 main
@@ -495,14 +510,14 @@ main
   > div
   > div:nth-child(4)
   > img[alt="google-button"] {
-  margin: 15px 0;
+  margin: 1.5rem 0;
   cursor: pointer;
 }
 
 main > section:nth-child(4) > div:nth-child(2) > div > div:nth-child(4) > div {
   width: 20vw;
-  height: 1.5px;
-  margin-bottom: 14px;
+  height: 0.15rem;
+  margin-bottom: 1.4rem;
 
   background-color: rgb(243, 223, 251);
 }
@@ -527,22 +542,22 @@ footer {
   align-items: flex-start;
   list-style: none;
   width: 100vw;
-  padding: 100px 150px 80px 150px;
+  padding: 10rem 15rem 8rem 15rem;
 }
 footer > div:nth-child(1) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
+  gap: 3rem;
 }
 footer > div:nth-child(1) > p {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1.4rem;
+  line-height: 2rem;
   color: #6f6f6f;
 }
 footer > div:nth-child(1) > div > img {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 footer > div:nth-child(1) > div > img:hover {
   cursor: pointer;
@@ -552,9 +567,9 @@ footer > ul {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 10px;
+  gap: 1rem;
   list-style: none;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #6f6f6f;
 }
 
@@ -572,22 +587,237 @@ footer > div:nth-child(6) {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
+  gap: 3rem;
 }
 footer > div:nth-child(6) > label {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  border: 1px solid rgb(243, 223, 251);
-  width: 250px;
-  padding: 9px 20px;
-  box-shadow: 0 5px 5px 0 rgb(231, 231, 231);
+  gap: 1rem;
+  border: 0.1rem solid rgb(243, 223, 251);
+  width: 25rem;
+  padding: 0.9rem 2.4rem;
+  box-shadow: 0 0.5rem 0.5rem 0 rgb(231, 231, 231);
 }
 footer > div:nth-child(6) > label > input {
   border: none;
   outline: none;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 1rem;
+}
+
+/************** Media Query ****************/
+/* ************************************* */
+@media screen and (max-width: 640px) and (min-width: 300px) {
+  /****** nav section *******/
+  header {
+    padding: 0 2rem;
+  }
+
+  nav > ul {
+    display: none;
+  }
+  i[class="fa-solid fa-bars"] {
+    display: block;
+    font-size: 22px;
+  }
+  /******************* header section ***************/
+  header section:nth-child(2) {
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+  }
+  header section:nth-child(2) > div {
+    align-items: center;
+  }
+
+  header > section:nth-child(2) > img {
+    width: 90%;
+  }
+
+  header section:nth-child(2) > div h2 {
+    font-size: 3rem;
+    width: 100%;
+  }
+  header section:nth-child(2) > div p {
+    font-size: 1.3rem;
+    width: 80%;
+  }
+  /************** main section ***************/
+  main > section:nth-child(1) {
+    padding: 8rem 2rem 0 2rem;
+  }
+
+  main > section:nth-child(1) > div > h3 {
+    font-size: 2.8rem;
+  }
+  main > section:nth-child(1) > div > p {
+    font-size: 1.3rem;
+    width: 90%;
+    /* line-height: 2.5rem;
+    color: rgb(161, 160, 160); */
+  }
+  /******* 3 box section ******/
+  main > section:nth-child(1) > div:nth-child(2) {
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+  }
+  main > section:nth-child(1) > div:nth-child(2) > div > h4 {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  main > section:nth-child(1) > div:nth-child(2) > div > p {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  /************* main section 2nd **************/
+  main > section:nth-child(2) {
+    padding: 12rem 2rem 0 2rem;
+  }
+  main > section:nth-child(2) > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 6rem;
+  }
+  img[src="./images/Group 21.svg"] {
+    width: 20rem;
+  }
+  /* top div */
+  main > section:nth-child(2) > div:nth-child(1) > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.3rem;
+    text-align: center;
+  }
+
+  main > section:nth-child(2) > div:nth-child(1) > div > p {
+    font-size: 1.3rem;
+    width: 90vw;
+  }
+  /***************** bottom section *****************/
+  main > section:nth-child(2) > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.5rem;
+    padding: 0;
+  }
+  main > section:nth-child(2) > div:nth-child(2) > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.3rem;
+  }
+  img[src="./images/image 6.png"] {
+    width: 30rem;
+  }
+  main > section:nth-child(2) > div:nth-child(2) > div > p {
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+  }
+  /********** main > section 3rd *********/
+  main > section:nth-child(3) {
+    padding: 28rem 2rem;
+  }
+
+  /*** div 1st ***/
+  main > section:nth-child(3) > div:nth-child(1) {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3.5rem; */
+    padding: 0;
+    width: 100%;
+  }
+  main > section:nth-child(3) > div:nth-child(1) > p:nth-child(1) {
+    font-size: 1.8rem;
+
+    width: 100%;
+  }
+  /* main > section:nth-child(3) > div:nth-child(1) > div > p {
+    margin-bottom: 0.8rem;
+  } */
+
+  /* line div 2nd */
+  main > section:nth-child(3) > div:nth-child(2) {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(229, 174, 253);
+  }
+  /* line div 3rd */
+  main > section:nth-child(3) > div:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    gap: 2.7rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  /********* main > section 4th *********/
+  /* ********************************* */
+  /* left div */
+  main > section:nth-child(4) {
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 2rem 0 2rem;
+  }
+  main > section:nth-child(4) > div:nth-child(1) {
+    width: 100%;
+  }
+  main
+    > section:nth-child(4)
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > p:nth-child(1) {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+  }
+  /* right div */
+  main > section:nth-child(4) > div:nth-child(2) {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 223, 251);
+    padding: 0;
+  }
+  main > section:nth-child(4) > div:nth-child(2) > div {
+    width: 80vw;
+    padding: 2rem 0;
+    margin: 2rem 0;
+  }
+
+  main
+    > section:nth-child(4)
+    > div:nth-child(2)
+    > div
+    > div:nth-child(2)
+    > button,
+  input {
+    width: 90%;
+  }
+  main
+    > section:nth-child(4)
+    > div:nth-child(2)
+    > div
+    > div:nth-child(4)
+    > div {
+    width: 90%;
+    height: 0.15rem;
+    margin-bottom: 1.4rem;
+    background-color: rgb(243, 223, 251);
+  }
 }
