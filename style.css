@@ -609,7 +609,7 @@ footer > div:nth-child(6) > label > input {
 
 /************** Media Query ****************/
 /* ************************************* */
-@media screen and (max-width: 768px) and (min-width: 300px) {
+@media screen and (max-width: 1024px) and (min-width: 300px) {
   /****** nav section *******/
   header {
     padding: 0 2rem;
@@ -824,6 +824,10 @@ footer > div:nth-child(6) > label > input {
 }
 
 @media screen and (max-width: 768px) and (min-width: 450px) {
+  nav {
+    padding: 2rem 3rem;
+    margin-bottom: 5rem;
+  }
   /******************* header section ***************/
 
   header > section:nth-child(2) > img {
@@ -842,19 +846,9 @@ footer > div:nth-child(6) > label > input {
   main > section:nth-child(1) > div > p {
     font-size: 1.3rem;
     width: 70%;
-    /* line-height: 2.5rem;
-    color: rgb(161, 160, 160); */
   }
   /******* 3 box section ******/
-  /* main > section:nth-child(1) > div:nth-child(2) {
-    flex-direction: column;
-    width: 100%;
-    gap: 4rem;
-  } */
-  /* main > section:nth-child(1) > div:nth-child(2) > div > h4 {
-    width: 100%;
-    font-size: 1.4rem;
-  } */
+
   main > section:nth-child(1) > div:nth-child(2) > div > p {
     width: 65%;
     font-size: 1.3rem;
@@ -864,50 +858,23 @@ footer > div:nth-child(6) > label > input {
   main > section:nth-child(2) {
     padding: 12rem 4rem 0 4rem;
   }
-  /* main > section:nth-child(2) > div {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    gap: 6rem;
-  } */
   img[src="./images/Group 21.svg"] {
     width: 30rem;
   }
   /* top div */
-  /* main > section:nth-child(2) > div:nth-child(1) > div {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2.3rem;
-    text-align: center;
-  } */
 
   main > section:nth-child(2) > div:nth-child(1) > div > p {
     /* font-size: 1.3rem; */
     width: 70vw;
   }
   /***************** bottom section *****************/
-  /* main > section:nth-child(2) > div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 4.5rem;
-    padding: 0;
-  } */
-  /* main > section:nth-child(2) > div:nth-child(2) > div {
-    flex-direction: column;
-    align-items: center;
-    gap: 2.3rem;
-  } */
+
   img[src="./images/image 6.png"] {
     width: 40rem;
   }
   main > section:nth-child(2) > div:nth-child(2) > div > p {
-    /* font-size: 1.3rem; */
     width: 70%;
-    /* text-align: center; */
   }
 
   /********** main > section 3rd *********/
@@ -930,8 +897,6 @@ footer > div:nth-child(6) > label > input {
 
   /* left div */
   main > section:nth-child(4) {
-    /* flex-direction: column;
-    align-items: center; */
     padding: 10rem 4rem 0 4rem;
   }
   main > section:nth-child(4) > div:nth-child(1) {
@@ -947,5 +912,220 @@ footer > div:nth-child(6) > label > input {
   }
   main > section:nth-child(4) > div:nth-child(2) > div > h3 {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  nav {
+    padding: 2rem 3rem;
+    margin-bottom: 5rem;
+  }
+  /******************* header section ***************/
+  header > section:nth-child(2) > div > h2 {
+    font-size: 4.5rem;
+    width: 75%;
+  }
+  header > section:nth-child(2) > div > p {
+    font-size: 1.6rem;
+    width: 60%;
+  }
+  header > section:nth-child(2) > div {
+    gap: 4.5rem;
+  }
+  header > section:nth-child(2) > img {
+    width: 65%;
+  }
+  /************** main section ***************/
+  main > section:nth-child(1) {
+    padding: 8rem 4rem 0 4rem;
+    gap: 9rem;
+  }
+
+  main > section:nth-child(1) > div > h3 {
+    font-size: 3.5rem;
+    width: 55%;
+  }
+  main > section:nth-child(1) > div > p {
+    font-size: 1.6rem;
+    width: 55%;
+  }
+  /******* 3 box section ******/
+  main > section:nth-child(1) > div:nth-child(2) > div > h4 {
+    width: 65%;
+    font-size: 2rem;
+  }
+  main > section:nth-child(1) > div:nth-child(2) > div > p {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+
+  /************* main section 2nd **************/
+  main > section:nth-child(2) {
+    padding: 12rem 4rem 0 4rem;
+  }
+
+  img[src="./images/Group 21.svg"] {
+    width: 35rem;
+  }
+  /* top div */
+  main > section:nth-child(2) > div:nth-child(1) > div > h2 {
+    font-size: 2.4rem;
+    /* width: 70vw; */
+  }
+  main > section:nth-child(2) > div:nth-child(1) > div > p {
+    font-size: 1.6rem;
+    width: 60vw;
+  }
+  /***************** bottom section *****************/
+
+  img[src="./images/image 6.png"] {
+    width: 45rem;
+  }
+  main > section:nth-child(2) > div:nth-child(2) > div > h2 {
+    font-size: 2.4rem;
+  }
+  main > section:nth-child(2) > div:nth-child(2) > div > p {
+    font-size: 1.6rem;
+    width: 60%;
+  }
+
+  /********** main > section 3rd *********/
+  main > section:nth-child(3) {
+    padding: 28rem 4rem;
+  }
+
+  /*** div 1st ***/
+
+  main > section:nth-child(3) > div:nth-child(1) > p:nth-child(1) {
+    padding-top: 5rem;
+    width: 80%;
+  }
+
+  /* line div 2nd */
+  main > section:nth-child(3) > div:nth-child(2) {
+    width: 80%;
+  }
+  /********* main > section 4th *********/
+  /* ********************************* */
+
+  /* left div */
+  main > section:nth-child(4) {
+    padding: 10rem 4rem 0 4rem;
+  }
+  main > section:nth-child(4) > div:nth-child(1) {
+    width: 75%;
+  }
+
+  main
+    > section:nth-child(4)
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > p:nth-child(1) {
+    font-size: 1.8rem;
+    width: 45rem;
+    text-align: center;
+  }
+  /* right div */
+  main > section:nth-child(4) > div:nth-child(2) {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 223, 251);
+    padding: 0;
+  }
+
+  main > section:nth-child(4) > div:nth-child(2) > div {
+    width: 50vw;
+    padding: 2rem 0;
+    margin: 5rem 0;
+  }
+  main > section:nth-child(4) > div:nth-child(2) > div > h3 {
+    font-size: 1.6rem;
+  }
+  /* *********** footer section ************* */
+  footer {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(2, 0.8fr);
+    justify-items: center;
+    align-items: flex-start;
+    row-gap: 9rem;
+    padding: 19rem 5rem 10rem 5rem;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1025px) {
+  /**************** header section *************/
+  header {
+    width: 100vw;
+    padding: 0 10rem;
+  }
+  /**************** WhyQuby section *************/
+  main > section:nth-child(1) {
+    gap: 6.5rem;
+    padding: 8rem 10rem 0 10rem;
+  }
+  main > section:nth-child(1) > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  /****************  main > section 2nd *************/
+
+  main > section:nth-child(2) {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+    padding: 12rem 10rem 0 10rem;
+  }
+  main > section:nth-child(2) > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    width: 100%;
+
+    padding: 0;
+  }
+  img[src="./images/Group 21.svg"] {
+    width: 30rem;
+  }
+
+  main > section:nth-child(2) > div:nth-child(2) {
+    justify-content: center;
+    gap: 8rem;
+    padding: 0;
+  }
+  img[src="./images/image 6.png"] {
+    width: 30rem;
+  }
+  /**************** logo section *************/
+  main > section:nth-child(3) > div:nth-child(1) > p:nth-child(1) {
+    font-size: 2rem;
+    color: rgb(47, 47, 47);
+    line-height: 2.5rem;
+    width: 150%;
+  }
+  /************* Footer section *****************/
+  footer {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(2, 0.8fr);
+    justify-items: center;
+    align-items: flex-start;
+    row-gap: 9rem;
+    padding: 19rem 5rem 10rem 5rem;
   }
 }
