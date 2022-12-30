@@ -12,7 +12,7 @@
 
 This project took 6hrs to complete
 
-- not yet responsive
+- fully responsive page
 
 **What I learned in this project**
 
@@ -22,4 +22,4 @@ This project took 6hrs to complete
 
 ![Project-12](https://img.shields.io/badge/HTML%20%26%20CSS-Project--12-skyblue)
 
-![Project 13](./Data%20Analytics%20Landing%20page.png)
+![data-analytics-page](https://user-images.githubusercontent.com/112545072/210030438-2d31b90d-feeb-4b4a-8676-01ac62302b00.png)
