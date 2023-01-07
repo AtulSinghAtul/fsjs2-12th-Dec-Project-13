@@ -2,7 +2,7 @@
 
 ## Name - Atul Singh
 
-- ## [Live Link](https://fsjs2-12th-dec-project-13.netlify.app/)
+- ## [Project Live Link](https://fsjs2-12th-dec-project-13.netlify.app/)
 
 > ### Social Media Links:
 
